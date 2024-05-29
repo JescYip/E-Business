@@ -1,5 +1,9 @@
 # ISE2001 multi-tier e-business web application
 
-运行这个project，可以使用 visual studio code
+The PolyU Campus Store online platform sells PolyU souvenirs, gifts, stationery and original products by PolyU design students and teachers. Our website is user-friendly for customers, with multiple features such as search, shopping cart, submitting feedback, and more.
 
-点开 index.html 右键：Open in Default Browser
+HTML & JAVASCRIPT: Display the content and user interaction and accept user input
+
+ASP: Handle logic and data interaction
+
+DATABASE: Data storage and management
