@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>PolyU Campus Online Store Platform</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="main-title">PolyU Campus Online Store Platform</h1>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a href="search.html">Search</a></li>
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="feedback.html">Feedback</a></li>
+                <li class="nav-item"><a href="about.html">About us</a></li>
+                <li class="nav-item"><a href="sign.html">Sign Up</a></li>
+            </ul>
+        </nav>
+
+        <a href="#" onclick="showLoginPopup(); return false;" class="cart">Cart</a>
+
+        <!-- Login Form -->
+        <form action="cart.asp" id="loginPopup" method="post">
+            You need to log in first:<br>
+            <label>🧑🏻‍ Username:</label>
+            <input type="text" name="username" required><br>
+            <label>🔑 Password:</label>
+            <input type="password" name="password" required><br>
+            Click "login" button to log in 👉
+            <input type="submit" value="Login">
+        </form>
+    </header>
+
+    <div class="left">
+        <div class="logo-div">
+            <div class="logo">
+            </div>
+        </div>
+
+        <p class="category" style="font-style: normal;">Category</p>
+
+        <div class="nav-items">
+            <div class="icon-div">
+                <img class="icons" src="/icons/bag.png" alt="icon">
+            </div>
+            <a class="sidebar" href="#souvenir">Souvenir</a>
+        </div>
+
+        <div class="nav-items">
+            <div class="icon-div">
+                <img class="icons" src="/icons/gift.png" alt="icon">
+            </div>
+            <a class="sidebar" href="#gifts">Gifts</a>
+        </div>
+
+        <div class="nav-items">
+            <div class="icon-div">
+                <img class="icons" src="/icons/Stationery.png" alt="icon">
+            </div>
+            <a class="sidebar" href="#stationery">Stationery</a>
+        </div>
+        <div class="nav-items">
+            <div class="icon-div">
+                <img class="icons" src="/icons/design.png" alt="icon">
+            </div>
+            <a class="sidebar" href="#polyudesign">Polyu Design</a>
+        </div>
+
+
+        <div class="help">
+            <div class="icon-div">
+                <img class="icons" src="/icons/help.png" alt="icon">
+            </div>
+
+            <a class="sidebar" href="viewfd.asp">Help Center</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="account-container">
+            <h2>Sign up Your Account</h2>
+            <form class="account-form" action="sign.asp" method="POST">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="Email">Email</label>
+                    <input type="text" id="Email" name="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="Age">Age</label>
+                    <input type="text" id="Age" name="Age" required>
+                </div>
+                <div class="form-group">
+                    <label for="Contact number">Contact number</label>
+                    <input type="text" id="Contact number" name="Contact number" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Sign Up</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+
+    <script>
+        function showLoginPopup() {
+            document.getElementById('loginPopup').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        // Close popup when clicking on overlay
+        document.getElementById('overlay').onclick = function () {
+            this.style.display = 'none';
+            document.getElementById('loginPopup').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

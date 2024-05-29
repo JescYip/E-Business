@@ -1,0 +1,395 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>PolyU Campus Online Store Platform</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="main-title">PolyU Campus Online Store Platform</h1>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a href="search.html">Search</a></li>
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="feedback.html">Feedback</a></li>
+                <li class="nav-item"><a href="about.html">About us</a></li>
+                <li class="nav-item"><a href="sign.html">Sign Up</a></li>
+            </ul>
+        </nav>
+
+        <a href="#" onclick="showLoginPopup(); return false;" class="cart">Cart</a>
+
+        <!-- Login Form -->
+        <form action="cart.asp" id="loginPopup" method="post">
+            You need to log in first:<br>
+            <label>🧑🏻‍ Username:</label>
+            <input type="text" name="username" required><br>
+            <label>🔑 Password:</label>
+            <input type="password" name="password" required><br>
+            Click "login" button to log in 👉
+            <input type="submit" value="Login">
+        </form>
+
+    </header>
+
+    <div class="left">
+        <div class="logo-div">
+            <div class="logo">
+            </div>
+        </div>
+
+        <p class="category" style="font-style: normal;">Category</p>
+
+        <div class="nav-items">
+            <div class="icon-div">
+                <img class="icons" src="/icons/bag.png" alt="Souvenior icon">
+            </div>
+            <a class="sidebar" href="#souvenir">Souvenir</a>
+        </div>
+
+        <div class="nav-items">
+            <div class="icon-div">
+                <img class="icons" src="/icons/gift.png" alt="icon">
+            </div>
+            <a class="sidebar" href="#gifts">Gifts</a>
+        </div>
+
+        <div class="nav-items">
+            <div class="icon-div">
+                <img class="icons" src="/icons/Stationery.png" alt="icon">
+            </div>
+            <a class="sidebar" href="#stationery">Stationery</a>
+        </div>
+        <div class="nav-items">
+            <div class="icon-div">
+                <img class="icons" src="/icons/design.png" alt="icon">
+            </div>
+            <a class="sidebar" href="#polyudesign">Polyu Design</a>
+        </div>
+
+
+        <div class="nav-items">
+            <div class="icon-div">
+                <img class="icons" src="/icons/help.png" alt="icon">
+            </div>
+
+            <a class="sidebar" href="viewfd.asp">Help Center</a>
+        </div>
+    </div>
+
+
+    <div class="main-content">
+        <div id="souvenir" class="souvenir-header">
+            <h1 class="category-title">Souvenir <span>4 items</span></h1>
+            <hr> <!-- 添加水平线 -->
+        </div>
+        <section class="product-grid souvenior-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="/PolyU souvenir/Souvenir/Canvas Tote Bag_Cover.png" alt="Canvas Tote bag"
+                     class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Canvas Tote bag</h3>
+                    <p class="product-price">$50.00 / pc</p>
+                    <p class="product-description">
+                        We have black and white colors for this bag.</p>
+                    <br>
+                    <div class="button-container">
+                        <button class="add-to-cart" data-product-name="Canvas Tote Bag" data-price="50.00">
+                            Add to
+                            Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="/PolyU souvenir/Souvenir/CPA Cover 1176x884_red card holder_without New.png"
+                     alt="PolyU Card Holder Set" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">PolyU Card Holder Set</h3>
+                    <p class="product-price">$78.00 / pc</p>
+                    <p class="product-description">
+                        This card holder is specially designed to celebrate PolyU's 85th
+                        Anniversary.
+                    </p>
+                    <div class="button-container">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="/PolyU souvenir/Souvenir/Silk Scarf_Cover.jpg" alt="Silk Scarf_Cover" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Silk Scarf Cover</h3>
+                    <p class="product-price">$199.00 / pc</p>
+                    <p class="product-description">
+                        Features PolyU logo in three shades.<br>
+                        Rolled hem 100% silk chiffon
+                    </p>
+                    <div class="button-container">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="/PolyU souvenir/Souvenir/PolyUCap_main_New.jpg" alt="PolyUCap_main_New" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">PolyU Cap</h3>
+                    <p class="product-price">$88.00 / pc</p>
+                    <p class="product-description">
+                        Description: Size: 58cm (Adjustable)<br>
+                        Color: Black / Grey
+                    </p>
+                    <div class="button-container">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <div class="souvenir-header">
+            <h1 id="gifts" class="category-title">Gifts <span>4 items</span></h1>
+            <hr> <!-- 添加水平线 -->
+        </div>
+        <section class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="/PolyU souvenir/Gifts/Paper Art Tea.png" alt="Paper Art Tea" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Paper Art Tea</h3>
+                    <p class="product-price">$698.00 / pc</p>
+                    <p class="product-description">
+                        MINGCHA, handcrafted teas from China that appeal
+                        to all five senses.
+                    </p>
+                    <div class="button-container">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="/PolyU souvenir/Gifts/USB Universal Travel Adapter.png" alt="USB Travel Adapter"
+                     class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">USB Travel Adapter</h3>
+                    <p class="product-price">$98.00 / pc</p>
+                    <p class="product-description">
+                        Material: Wood and metal <br>
+                        Shield Size: 18cm x 14cm
+                    </p>
+                    <br>
+                    <div class="button-container">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="/PolyU souvenir/Gifts/Coffe Mug.jpg" alt="Coffe Mug" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Coffe Mug</h3>
+                    <p class="product-price">$80.00 / pc</p>
+                    <p class="product-description">
+                        Available in black and rose gold
+                        Material: Double-wall high quality
+                    </p><br>
+                    <div class="button-container">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="/PolyU souvenir/Gifts/PolyU Tea Cup Base.png" alt="PolyU Tea Cup Base" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">PolyU Tea Cup Base</h3>
+                    <p class="product-price">$68.00 / pc</p>
+                    <p class="product-description">The Seven PolyU Tea Cup Base with PolyU history.</p>
+                    <br>
+                    <div class="button-container">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="souvenir-header">
+            <h1 id="stationery" class="category-title">Stationary <span>3 items</span></h1>
+            <hr> <!-- 添加水平线 -->
+        </div>
+        <section class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="/PolyU souvenir/Stationery/Parker Pen.jpg" alt="Parker Pen" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Parker Pen</h3>
+                    <p class="product-price">$350.00 / pc</p>
+                    <p class="product-description">
+                        Parker IM pen with gold PolyU logo.<br>
+                        Packaging with parker pen gift box.
+                    </p>
+                    <div class="button-container">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="/PolyU souvenir/Stationery/Memo Cube.jpg" alt="Memo Cube" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Memo Cube</h3>
+                    <p class="product-price">$30.00 / pc</p>
+                    <p class="product-description">
+                        Size: 7 x 7 x 7cm <br><br>
+                        Material: Non-Sticky Paper
+                    </p>
+                    <br>
+                    <div class="button-container">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="/PolyU souvenir/Stationery/Ballpoint Pen.jpg" alt="Ballpoint Pen" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Ballpoint Pen</h3>
+                    <p class="product-price">$20.00 / pc</p>
+                    <p class="product-description">
+                        Ballpoint pen with PolyU logo <br><br>
+                        Available in black and white
+                    </p>
+                    <br>
+                    <div class="button-container">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="souvenir-header">
+            <h1 id="polyudesign" class="category-title">Polyu Design <span>2 items</span></h1>
+            <hr> <!-- 添加水平线 -->
+        </div>
+        <section class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="/PolyU souvenir/Polyu Design/SFT Embroidery Tote Bag.jpg" alt="SFT Embroidery Tote Bag"
+                     class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">SFT Embroidery Tote Bag</h3>
+                    <p class="product-price">$68.00 / pc</p>
+                    <p class="product-description">
+                        Size: 42cm Height X 35cm Width <br>
+                        Strap length: 58cm full length
+                    </p>
+                    <div class="button-container">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="/PolyU souvenir/Polyu Design/SFT Logo Knit Tote Bag.jpg" alt="SFT Logo Knit Tote Bag"
+                     class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">SFT Logo Knit Tote Bag</h3>
+                    <p class="product-price">$280.00 / pc</p>
+                    <p class="product-description">
+                        Size:
+                        42cm Height X 34cm Width <br>
+                        Strap length: 60cm full length
+                    </p><br>
+                    <div class="button-container">
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <p>Contact</p>
+
+        </footer>
+    </div>
+<div id="modalBackground" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:1000;"></div>
+
+<form id="Form1" method="post" action="add_to_cart.asp" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 300px; background: white; padding: 20px; box-shadow: 0 0 15px rgba(0,0,0,0.5); z-index: 1001;">
+    <input type="hidden" name="action" value="action">
+    <input type="hidden" id="formProductName" name="productName" value="">
+    <input type="hidden" id="formProductPrice" name="productPrice" value="">
+    <input type="hidden" id="formProductType" name="productType" value="">
+    <input type="text" id="username" name="username" placeholder="Username" required>
+    <input type="password" id="password" name="password" placeholder="Password" required>
+    <input type="number" id="amount" name="amount" placeholder="Quantity" required>
+    <div style="display: flex; justify-content: space-between;">
+        <button type="submit" style="margin-right: 20px;">Submit</button>
+        <button type="button" onclick="closeForm()">Close</button>
+    </div>
+</form>
+<script>
+    document.querySelectorAll('.add-to-cart').forEach(function (button) {
+        button.addEventListener('click', function () {
+            var productCard = this.closest('.product-card');
+            console.log(productName)
+            var productName = productCard.querySelector('.product-name').textContent;
+            var productPrice = productCard.querySelector('.product-price').textContent;
+            var productType = this.closest('section').previousElementSibling.querySelector('.category-title').textContent.trim().split(' ')[0];
+
+            document.getElementById('formProductName').value = productName;
+            document.getElementById('formProductPrice').value = productPrice;
+            document.getElementById('formProductType').value = productType;
+
+            var form = document.getElementById('Form1');
+            var background = document.getElementById('modalBackground');
+            form.style.display = 'block';
+            background.style.display = 'block'; 
+        });
+    });
+    window.onload = function () {
+        var urlParams = new URLSearchParams(window.location.search);
+        var message = urlParams.get('message');
+        if (message) {
+            alert(message);
+        }
+    };
+
+    function showLoginPopup() {
+        document.getElementById('loginPopup').style.display = 'block';
+        document.getElementById('overlay').style.display = 'block';
+    }
+
+    // Close popup when clicking on overlay
+    document.getElementById('overlay').onclick = function () {
+        this.style.display = 'none';
+        document.getElementById('loginPopup').style.display = 'none';
+    }
+
+    function closeForm() {
+        window.location.href = 'index.html';
+    }
+</script>
+</body>
+
+</html>

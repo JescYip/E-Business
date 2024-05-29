@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>PolyU Campus Online Store Platform</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="main-title">PolyU Campus Online Store Platform</h1>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a href="search.html">Search</a></li>
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="feedback.html">Feedback</a></li>
+                <li class="nav-item"><a href="about.html">About us</a></li>
+                <li class="nav-item"><a href="sign.html">Sign Up</a></li>
+            </ul>
+        </nav>
+        <a href="#" onclick="showLoginPopup(); return false;" class="cart">Cart</a>
+
+        <!-- Login Form -->
+        <form action="cart.asp" id="loginPopup" method="post">
+            You need to log in first:<br>
+            <label>🧑🏻‍ Username:</label>
+            <input type="text" name="username" required><br>
+            <label>🔑 Password:</label>
+            <input type="password" name="password" required><br>
+            Click "login" button to log in 👉
+            <input type="submit" value="Login">
+        </form>
+    </header>
+
+    <div class="left">
+        <div class="logo-div">
+            <div class="logo">
+            </div>
+        </div>
+
+        <p class="category" style="font-style: normal;">Category</p>
+
+        <div class="nav-items">
+            <div class="icon-div">
+                <img class="icons" src="/icons/bag.png" alt="icon">
+            </div>
+            <a class="sidebar" href="#souvenir">Souvenir</a>
+        </div>
+
+        <div class="nav-items">
+            <div class="icon-div">
+                <img class="icons" src="/icons/gift.png" alt="icon">
+            </div>
+            <a class="sidebar" href="#gifts">Gifts</a>
+        </div>
+
+        <div class="nav-items">
+            <div class="icon-div">
+                <img class="icons" src="/icons/Stationery.png" alt="icon">
+            </div>
+            <a class="sidebar" href="#stationery">Stationery</a>
+        </div>
+        <div class="nav-items">
+            <div class="icon-div">
+                <img class="icons" src="/icons/design.png" alt="icon">
+            </div>
+            <a class="sidebar" href="#polyudesign">Polyu Design</a>
+        </div>
+
+
+        <div class="help">
+            <div class="icon-div">
+                <img class="icons" src="/icons/help.png" alt="icon">
+            </div>
+
+            <a class="sidebar" href="viewfd.asp">Help Center</a>
+        </div>
+
+    </div>
+
+
+    <div class="main-content" style="background-color: white;">
+        <div class="souvenir-header">
+
+            <h1 class="category-title">About US</h1>
+            <hr> 
+
+            <p style="font-style: italic;">Tel: +852 2772 2561 <br>
+                Address: Room VA209, Shaw Amenities Building, PolyU</p>
+        </div>
+        <hr>
+
+
+        <!-- 图片与描述容器 -->
+        <div class="image-description-container">
+            <img src="PolyU souvenir/PolyUBookstore.png" alt="PolyU Campus" class="about-image">
+            <div class="about-description">
+                <p>PolyU is offering a range of souvenirs which are available for purchase at the University
+                    Bookstore.
+                </p>
+                <ul>
+                    <li>理大書店營業時間 / Office hours of PolyU Bookstore:</li>
+                    <li>星期一至星期五上午10時至晚上7時 / 10am - 7pm (Mon - Fri)</li>
+                    <li>星期六上午10時至下午5時 / 10am - 5pm (Sat)</li>
+                    <li>(星期日及公眾假期休息 / Closed on Sundays & Public holidays)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+    <script>
+        
+        function showLoginPopup() {
+            document.getElementById('loginPopup').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        // Close popup when clicking on overlay
+        document.getElementById('overlay').onclick = function () {
+            this.style.display = 'none';
+            document.getElementById('loginPopup').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
